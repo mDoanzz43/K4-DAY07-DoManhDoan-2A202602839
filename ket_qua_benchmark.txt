@@ -1,0 +1,335 @@
+=== CP6 Benchmark and Strategy Comparison ===
+
+=== Benchmark: fixed_size ===
+Corpus: data\rmit_data_ver01
+Chunker strategy: fixed_size
+Embedder: LexicalEmbedder(term-frequency cosine, local)
+Loaded chunks: 42
+
+Q1: Học phí tại RMIT được thanh toán theo cách nào?
+Gold answer: Học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ.
+Gold doc: chinh-sach-hoc-phi-rmit
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4563 doc_id=chinh-sach-hoc-phi-rmit chunk=0 GOLD
+     # Thông tin và chính sách học phí RMIT Tại RMIT, học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ. Các mức dưới đây là học phí năm 2026 dành cho sinh viên, học viên mới nhập học c
+  2. score=0.3753 doc_id=chinh-sach-hoc-phi-rmit chunk=10 GOLD
+     Học phí chỉ mang tính tham khảo, có thể thay đổi theo trường hợp đăng ký và chỉ áp dụng cho năm 2026. ## Phương thức thanh toán - Thanh toán trực tuyến. - Thanh toán qua ngân hàng trực tuyến VCB-iB@NKING. - Thanh toán bằ
+  3. score=0.3634 doc_id=chinh-sach-hoc-phi-dac-biet chunk=12 ----
+     nếu: Học viên đạt điểm trung bình từ 3.0/4.0 hoặc 75% trong điều kiện tuyển sinh. Lưu ý: - Không áp dụng cho học viên hiện tại chuyển tiếp sang chương trình thạc sĩ Kinh doanh quốc tế (MIB). - Các chính sách học phí đặc 
+
+Q2: Sinh viên có người thân đang học hoặc đã tốt nghiệp tại RMIT được chiết khấu học phí bao nhiêu?
+Gold answer: Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt Nam được chiết khấu 5% học phí khi bắt đầu nhập học trong năm 2026.
+Gold doc: chinh-sach-hoc-phi-dac-biet
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.5888 doc_id=chinh-sach-hoc-phi-dac-biet chunk=1 GOLD
+     t hợp với nhau. Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên đã hoàn thành chương trình học tại RMIT Việt Nam, sinh viên sẽ được chiết khấu học phí của toàn bộ chương trình đó. Nếu anh chị em ruột, vợ chồ
+  2. score=0.5620 doc_id=chinh-sach-hoc-phi-dac-biet chunk=0 GOLD
+     # Chính sách học phí đặc biệt Chính sách học phí đặc biệt có thể áp dụng cho học phí năm 2025. ## Áp dụng cho hai cơ sở ## Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt
+  3. score=0.4945 doc_id=chinh-sach-hoc-phi-dac-biet chunk=8 GOLD
+     ụng cho sinh viên đổi ngành học sang Cử nhân Khoa học máy tính Chính sách học phí này không được áp dụng đồng thời với chính sách học phí đặc biệt khác hoặc chính sách dành cho con em của nhân viên. Đối với học viên các 
+
+Q3: RMIT đã trao học bổng tổng giá trị bao nhiêu và cho hơn bao nhiêu bạn trẻ?
+Gold answer: RMIT đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ.
+Gold doc: hoc-bong-rmit-vietnam
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4173 doc_id=hoc-bong-rmit-vietnam chunk=0 GOLD
+     # Thông tin học bổng RMIT Việt Nam Hàng năm, đại học RMIT Việt Nam trao nhiều học bổng cho các sinh viên tiềm năng. Đến nay, trường đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ ở khắp Việt 
+  2. score=0.3221 doc_id=hoc-bong-rmit-vietnam chunk=1 GOLD
+     IT ## Học bổng cho sinh viên hiện tại Nếu bạn là sinh viên hiện đang học tại RMIT Việt Nam với điểm trung bình cao, chúng tôi có những suất học bổng nhằm ghi nhận thành tích học tập xuất sắc của các bạn. ## Các bước nộp 
+  3. score=0.2606 doc_id=moc-thoi-gian-quan-trong-rmit chunk=0 ----
+     # Những mốc thời gian quan trọng của sinh viên Những mốc thời gian quan trọng cho học viên và sinh viên RMIT Việt Nam trong năm học. ## Cơ sở RMIT Việt Nam ### Chương trình Đại học và Sau Đại học Lịch học kỳ và mốc thời 
+
+Q4: Nhân viên RMIT có những ngày nghỉ phép và nghỉ ốm có lương nào?
+Gold answer: Nhân viên có 20 ngày nghỉ phép có lương, 10 ngày nghỉ ốm có lương, 05 ngày nghỉ lễ Giáng Sinh có lương mỗi năm và một số ngày nghỉ bổ sung theo điều kiện.
+Gold doc: phuc-loi-nhan-vien-rmit
+Metadata filter: {'audience': 'staff'}
+Score: 2/2
+Top results:
+  1. score=0.5753 doc_id=phuc-loi-nhan-vien-rmit chunk=5 GOLD
+     ời nước ngoài có thể mua bảo hiểm y tế tư nhân toàn diện cho người phụ thuộc trực tiếp. Bảo hiểm tai nạn cho toàn thể cán bộ giảng viên. ## Nghỉ phép Ngoài các ngày lễ trong năm theo quy định của Việt Nam, RMIT Việt Nam 
+  2. score=0.3954 doc_id=phuc-loi-nhan-vien-rmit chunk=0 GOLD
+     # Phúc lợi dành cho nhân viên RMIT Tại RMIT Việt Nam, chúng tôi trân trọng đội ngũ cán bộ giảng viên, và cam kết mang đến trải nghiệm làm việc chất lượng cho nhân viên thông qua điều kiện làm việc tuyệt vời và rất nhiều 
+  3. score=0.2576 doc_id=phuc-loi-nhan-vien-rmit chunk=1 GOLD
+     Gói lương tùy chọn cho nhân viên người nước ngoài (gói lương bao gồm học phí cho con của ứng viên và vé máy bay khứ hồi về nước) Vé máy bay và phụ cấp chuyển nơi làm việc dành cho nhân viên người nước ngoài có hợp đồng l
+
+Q5: Sinh viên hiện tại hoặc cựu sinh viên RMIT gửi khiếu nại bằng cách nào?
+Gold answer: Sinh viên hiện tại hoặc cựu sinh viên RMIT có thể gửi khiếu nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT.
+Gold doc: quy-trinh-khieu-nai-rmit
+Metadata filter: None
+Score: 2/2
+Top results:
+  1. score=0.6206 doc_id=quy-trinh-khieu-nai-rmit chunk=0 GOLD
+     # Thông tin khiếu nại tại RMIT Tại RMIT, chúng tôi đặt ra những quy chuẩn cao nhằm mang lại trải nghiệm học tập vượt trội cho sinh viên cũng như một môi trường làm việc an toàn, hiệu quả cho nhân viên. Song chúng tôi hiể
+  2. score=0.5049 doc_id=quy-trinh-khieu-nai-rmit chunk=1 GOLD
+     nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT. Tôi hiện là sinh viên của RMIT ## Sinh viên tương lai Bạn đang cân nhắc theo học tại RMIT? Nếu bạn đã từng liên lạc với chúng tôi, hoặc đã nhận được lờ
+  3. score=0.4292 doc_id=chinh-sach-hoc-phi-dac-biet chunk=1 ----
+     t hợp với nhau. Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên đã hoàn thành chương trình học tại RMIT Việt Nam, sinh viên sẽ được chiết khấu học phí của toàn bộ chương trình đó. Nếu anh chị em ruột, vợ chồ
+
+Strategy score: 10/10
+
+=== Benchmark: by_sentences ===
+Corpus: data\rmit_data_ver01
+Chunker strategy: by_sentences
+Embedder: LexicalEmbedder(term-frequency cosine, local)
+Loaded chunks: 33
+
+Q1: Học phí tại RMIT được thanh toán theo cách nào?
+Gold answer: Học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ.
+Gold doc: chinh-sach-hoc-phi-rmit
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4433 doc_id=chinh-sach-hoc-phi-rmit chunk=4 GOLD
+     - Học phí chỉ mang tính tham khảo, có thể thay đổi theo trường hợp đăng ký và chỉ áp dụng cho năm 2026. ## Phương thức thanh toán - Thanh toán trực tuyến. - Thanh toán qua ngân hàng trực tuyến VCB-iB@NKING. - Thanh toán 
+  2. score=0.3952 doc_id=chinh-sach-hoc-phi-dac-biet chunk=10 ----
+     Học bổng sẽ được áp dụng sau chính sách học phí đặc biệt. Chính sách đã chọn có thể được áp dụng cùng với học bổng. Học bổng được áp dụng sau khi chiết khấu học phí. Chính sách học phí đặc biệt phải tuân theo các điều kh
+  3. score=0.3782 doc_id=chinh-sach-hoc-phi-rmit chunk=2 GOLD
+     - Thời gian hoàn thành chương trình phụ thuộc vào số môn sinh viên chọn học trong từng học kỳ. - Học phí từng học kỳ được tính bằng Việt Nam đồng và dựa trên số môn đăng ký. - Thanh toán bằng tiền tệ khác được quy đổi sa
+
+Q2: Sinh viên có người thân đang học hoặc đã tốt nghiệp tại RMIT được chiết khấu học phí bao nhiêu?
+Gold answer: Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt Nam được chiết khấu 5% học phí khi bắt đầu nhập học trong năm 2026.
+Gold doc: chinh-sach-hoc-phi-dac-biet
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.5857 doc_id=chinh-sach-hoc-phi-dac-biet chunk=0 GOLD
+     # Chính sách học phí đặc biệt Chính sách học phí đặc biệt có thể áp dụng cho học phí năm 2025. ## Áp dụng cho hai cơ sở ## Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt
+  2. score=0.5464 doc_id=chinh-sach-hoc-phi-dac-biet chunk=1 GOLD
+     Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên hiện đang học hoặc đã từng học nhưng chưa hoàn thành chương trình học, sinh viên sẽ được chiết khấu học phí cho số môn (hoặc khóa học) tương đương với số môn (
+  3. score=0.4627 doc_id=chinh-sach-hoc-phi-dac-biet chunk=6 GOLD
+     Sinh viên phải bắt đầu chương trình học vào năm 2026 hoặc 2027 Học bổng được áp dụng sau khi chiết khấu học phí. Thông tin chi tiết có tại Tài liệu hướng dẫn thông tin học phí và phí phụ thu dành cho sinh viên 2026. ## C
+
+Q3: RMIT đã trao học bổng tổng giá trị bao nhiêu và cho hơn bao nhiêu bạn trẻ?
+Gold answer: RMIT đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ.
+Gold doc: hoc-bong-rmit-vietnam
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4392 doc_id=hoc-bong-rmit-vietnam chunk=0 GOLD
+     # Thông tin học bổng RMIT Việt Nam Hàng năm, đại học RMIT Việt Nam trao nhiều học bổng cho các sinh viên tiềm năng. Đến nay, trường đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ ở khắp Việt 
+  2. score=0.3069 doc_id=hoc-bong-rmit-vietnam chunk=1 GOLD
+     Bạn là sinh viên hiện tại đang theo học tại RMIT ## Học bổng cho sinh viên hiện tại Nếu bạn là sinh viên hiện đang học tại RMIT Việt Nam với điểm trung bình cao, chúng tôi có những suất học bổng nhằm ghi nhận thành tích 
+  3. score=0.2953 doc_id=hoc-bong-rmit-vietnam chunk=2 GOLD
+     Kiểm tra điều kiện nộp học bổng 3. Chuẩn bị hồ sơ 4. Nộp hồ sơ Mỗi học bổng đều có những điều kiện khác nhau, các bạn vui lòng xem thông tin cụ thể trong từng loại học bổng. Đại học RMIT Việt Nam có quyền thay đổi giá tr
+
+Q4: Nhân viên RMIT có những ngày nghỉ phép và nghỉ ốm có lương nào?
+Gold answer: Nhân viên có 20 ngày nghỉ phép có lương, 10 ngày nghỉ ốm có lương, 05 ngày nghỉ lễ Giáng Sinh có lương mỗi năm và một số ngày nghỉ bổ sung theo điều kiện.
+Gold doc: phuc-loi-nhan-vien-rmit
+Metadata filter: {'audience': 'staff'}
+Score: 2/2
+Top results:
+  1. score=0.5466 doc_id=phuc-loi-nhan-vien-rmit chunk=3 GOLD
+     Cán bộ giảng viên người nước ngoài có thể mua bảo hiểm y tế tư nhân toàn diện cho người phụ thuộc trực tiếp. Bảo hiểm tai nạn cho toàn thể cán bộ giảng viên. ## Nghỉ phép Ngoài các ngày lễ trong năm theo quy định của Việ
+  2. score=0.3895 doc_id=phuc-loi-nhan-vien-rmit chunk=0 GOLD
+     # Phúc lợi dành cho nhân viên RMIT Tại RMIT Việt Nam, chúng tôi trân trọng đội ngũ cán bộ giảng viên, và cam kết mang đến trải nghiệm làm việc chất lượng cho nhân viên thông qua điều kiện làm việc tuyệt vời và rất nhiều 
+  3. score=0.1966 doc_id=phuc-loi-nhan-vien-rmit chunk=1 GOLD
+     ## Phát triển chuyên môn RMIT Việt Nam thực hiện cam kết bồi đắp năng lực, năng khiếu và hiệu quả làm việc cho đội ngũ cán bộ giảng viên thông qua hoạt động phát triển chuyên môn. Đây là hoạt động nhằm hỗ trợ chiến lược 
+
+Q5: Sinh viên hiện tại hoặc cựu sinh viên RMIT gửi khiếu nại bằng cách nào?
+Gold answer: Sinh viên hiện tại hoặc cựu sinh viên RMIT có thể gửi khiếu nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT.
+Gold doc: quy-trinh-khieu-nai-rmit
+Metadata filter: None
+Score: 2/2
+Top results:
+  1. score=0.6385 doc_id=quy-trinh-khieu-nai-rmit chunk=1 GOLD
+     Tôi hiện là nhân viên của RMIT ## Sinh viên RMIT Nếu bạn là sinh viên hiện tại hoặc cựu sinh viên RMIT, bạn có thể gửi khiếu nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT. Tôi hiện là sinh viên của 
+  2. score=0.4150 doc_id=quy-trinh-khieu-nai-rmit chunk=0 GOLD
+     # Thông tin khiếu nại tại RMIT Tại RMIT, chúng tôi đặt ra những quy chuẩn cao nhằm mang lại trải nghiệm học tập vượt trội cho sinh viên cũng như một môi trường làm việc an toàn, hiệu quả cho nhân viên. Song chúng tôi hiể
+  3. score=0.3896 doc_id=chinh-sach-hoc-phi-dac-biet chunk=1 ----
+     Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên hiện đang học hoặc đã từng học nhưng chưa hoàn thành chương trình học, sinh viên sẽ được chiết khấu học phí cho số môn (hoặc khóa học) tương đương với số môn (
+
+Strategy score: 10/10
+
+=== Benchmark: recursive ===
+Corpus: data\rmit_data_ver01
+Chunker strategy: recursive
+Embedder: LexicalEmbedder(term-frequency cosine, local)
+Loaded chunks: 44
+
+Q1: Học phí tại RMIT được thanh toán theo cách nào?
+Gold answer: Học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ.
+Gold doc: chinh-sach-hoc-phi-rmit
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4616 doc_id=chinh-sach-hoc-phi-rmit chunk=0 GOLD
+     # Thông tin và chính sách học phí RMIT Tại RMIT, học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ. Các mức dưới đây là học phí năm 2026 dành cho sinh viên, học viên mới nhập học c
+  2. score=0.3965 doc_id=chinh-sach-hoc-phi-dac-biet chunk=14 ----
+     Chính sách học phí đặc biệt có thể áp dụng đồng thời với bất kỳ loại học bổng nào. Học bổng sẽ được áp dụng sau chính sách học phí đặc biệt. Chính sách đã chọn có thể được áp dụng cùng với học bổng. Học bổng được áp dụng
+  3. score=0.3516 doc_id=chinh-sach-hoc-phi-dac-biet chunk=0 ----
+     # Chính sách học phí đặc biệt Chính sách học phí đặc biệt có thể áp dụng cho học phí năm 2025. ## Áp dụng cho hai cơ sở ## Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt
+
+Q2: Sinh viên có người thân đang học hoặc đã tốt nghiệp tại RMIT được chiết khấu học phí bao nhiêu?
+Gold answer: Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt Nam được chiết khấu 5% học phí khi bắt đầu nhập học trong năm 2026.
+Gold doc: chinh-sach-hoc-phi-dac-biet
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.5859 doc_id=chinh-sach-hoc-phi-dac-biet chunk=1 GOLD
+     Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên đã hoàn thành chương trình học tại RMIT Việt Nam, sinh viên sẽ được chiết khấu học phí của toàn bộ chương trình đó. Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc 
+  2. score=0.5668 doc_id=chinh-sach-hoc-phi-dac-biet chunk=0 GOLD
+     # Chính sách học phí đặc biệt Chính sách học phí đặc biệt có thể áp dụng cho học phí năm 2025. ## Áp dụng cho hai cơ sở ## Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt
+  3. score=0.5120 doc_id=chinh-sach-hoc-phi-rmit chunk=0 ----
+     # Thông tin và chính sách học phí RMIT Tại RMIT, học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ. Các mức dưới đây là học phí năm 2026 dành cho sinh viên, học viên mới nhập học c
+
+Q3: RMIT đã trao học bổng tổng giá trị bao nhiêu và cho hơn bao nhiêu bạn trẻ?
+Gold answer: RMIT đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ.
+Gold doc: hoc-bong-rmit-vietnam
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4300 doc_id=hoc-bong-rmit-vietnam chunk=0 GOLD
+     # Thông tin học bổng RMIT Việt Nam Hàng năm, đại học RMIT Việt Nam trao nhiều học bổng cho các sinh viên tiềm năng. Đến nay, trường đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ ở khắp Việt 
+  2. score=0.2914 doc_id=hoc-bong-rmit-vietnam chunk=2 GOLD
+     1. Chọn học bổng phù hợp 2. Kiểm tra điều kiện nộp học bổng 3. Chuẩn bị hồ sơ 4. Nộp hồ sơ Mỗi học bổng đều có những điều kiện khác nhau, các bạn vui lòng xem thông tin cụ thể trong từng loại học bổng. Đại học RMIT Việt 
+  3. score=0.2755 doc_id=hoc-bong-rmit-vietnam chunk=1 GOLD
+     Nếu bạn là sinh viên hiện đang học tại RMIT Việt Nam với điểm trung bình cao, chúng tôi có những suất học bổng nhằm ghi nhận thành tích học tập xuất sắc của các bạn. ## Các bước nộp hồ sơ xin học bổng Trước khi nộp hồ sơ
+
+Q4: Nhân viên RMIT có những ngày nghỉ phép và nghỉ ốm có lương nào?
+Gold answer: Nhân viên có 20 ngày nghỉ phép có lương, 10 ngày nghỉ ốm có lương, 05 ngày nghỉ lễ Giáng Sinh có lương mỗi năm và một số ngày nghỉ bổ sung theo điều kiện.
+Gold doc: phuc-loi-nhan-vien-rmit
+Metadata filter: {'audience': 'staff'}
+Score: 2/2
+Top results:
+  1. score=0.5706 doc_id=phuc-loi-nhan-vien-rmit chunk=6 GOLD
+     20 ngày nghỉ phép có lương trong một năm 10 ngày nghỉ ốm có lương trong một năm 05 ngày nghỉ lễ Giáng Sinh có lương một năm Thêm hai ngày nghỉ lễ cho nhân viên người nước ngoài theo quốc khánh và đón năm mới truyền thống
+  2. score=0.3946 doc_id=phuc-loi-nhan-vien-rmit chunk=0 GOLD
+     # Phúc lợi dành cho nhân viên RMIT Tại RMIT Việt Nam, chúng tôi trân trọng đội ngũ cán bộ giảng viên, và cam kết mang đến trải nghiệm làm việc chất lượng cho nhân viên thông qua điều kiện làm việc tuyệt vời và rất nhiều 
+  3. score=0.2877 doc_id=phuc-loi-nhan-vien-rmit chunk=5 GOLD
+     Đội ngũ chuyên gia hướng dẫn và tư vấn cho nhiều lĩnh vực khác nhau như cải thiện giao tiếp trong gia đình, cân bằng giữa cuộc sống và công việc, tư vấn sang chấn tâm lý, giải quyết căng thẳng, lo âu hoặc trầm cảm, và nh
+
+Q5: Sinh viên hiện tại hoặc cựu sinh viên RMIT gửi khiếu nại bằng cách nào?
+Gold answer: Sinh viên hiện tại hoặc cựu sinh viên RMIT có thể gửi khiếu nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT.
+Gold doc: quy-trinh-khieu-nai-rmit
+Metadata filter: None
+Score: 2/2
+Top results:
+  1. score=0.6217 doc_id=quy-trinh-khieu-nai-rmit chunk=0 GOLD
+     # Thông tin khiếu nại tại RMIT Tại RMIT, chúng tôi đặt ra những quy chuẩn cao nhằm mang lại trải nghiệm học tập vượt trội cho sinh viên cũng như một môi trường làm việc an toàn, hiệu quả cho nhân viên. Song chúng tôi hiể
+  2. score=0.4918 doc_id=quy-trinh-khieu-nai-rmit chunk=1 GOLD
+     Tôi hiện là sinh viên của RMIT ## Sinh viên tương lai Bạn đang cân nhắc theo học tại RMIT? Nếu bạn đã từng liên lạc với chúng tôi, hoặc đã nhận được lời mời nhập học nhưng chưa ghi danh và muốn phản ánh về một vấn đề hay
+  3. score=0.3953 doc_id=chinh-sach-hoc-phi-dac-biet chunk=1 ----
+     Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên đã hoàn thành chương trình học tại RMIT Việt Nam, sinh viên sẽ được chiết khấu học phí của toàn bộ chương trình đó. Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc 
+
+Strategy score: 10/10
+
+=== Benchmark: heading_section ===
+Corpus: data\rmit_data_ver01
+Chunker strategy: heading_section
+Embedder: LexicalEmbedder(term-frequency cosine, local)
+Loaded chunks: 81
+
+Q1: Học phí tại RMIT được thanh toán theo cách nào?
+Gold answer: Học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ.
+Gold doc: chinh-sach-hoc-phi-rmit
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.5004 doc_id=chinh-sach-hoc-phi-rmit chunk=0 GOLD
+     # Thông tin và chính sách học phí RMIT Tại RMIT, học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ. Các mức dưới đây là học phí năm 2026 dành cho sinh viên, học viên mới nhập học c
+  2. score=0.3956 doc_id=chinh-sach-hoc-phi-dac-biet chunk=19 ----
+     ## Lưu ý Chính sách học phí đặc biệt có thể áp dụng đồng thời với bất kỳ loại học bổng nào. Học bổng sẽ được áp dụng sau chính sách học phí đặc biệt. Chính sách đã chọn có thể được áp dụng cùng với học bổng. Học bổng đượ
+  3. score=0.3742 doc_id=chinh-sach-hoc-phi-rmit chunk=16 GOLD
+     ## Phương thức thanh toán - Thanh toán trực tuyến. - Thanh toán qua ngân hàng trực tuyến VCB-iB@NKING. - Thanh toán bằng thẻ Mastercard hoặc Visa tại quầy Thu ngân của RMIT. - Chuyển khoản đến tài khoản Vietcombank của R
+
+Q2: Sinh viên có người thân đang học hoặc đã tốt nghiệp tại RMIT được chiết khấu học phí bao nhiêu?
+Gold answer: Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt Nam được chiết khấu 5% học phí khi bắt đầu nhập học trong năm 2026.
+Gold doc: chinh-sach-hoc-phi-dac-biet
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.5766 doc_id=chinh-sach-hoc-phi-dac-biet chunk=3 GOLD
+     ## Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt Nam Nếu anh chị em ruột, vợ chồng, cha mẹ hoặc con của sinh viên hiện đang học hoặc đã từng học nhưng chưa hoàn thành c
+  2. score=0.5764 doc_id=chinh-sach-hoc-phi-dac-biet chunk=2 GOLD
+     ## Sinh viên có anh chị em ruột, vợ chồng, cha mẹ hoặc con đang học hoặc đã tốt nghiệp tại RMIT Việt Nam Đối với chương trình Tiếng Anh cho đại học, chương trình UniSTART, chương trình Dự bị đại học, chương trình cử nhân
+  3. score=0.5579 doc_id=chinh-sach-hoc-phi-rmit chunk=0 ----
+     # Thông tin và chính sách học phí RMIT Tại RMIT, học phí được thanh toán theo từng học kỳ, dựa trên số môn sinh viên học trong từng học kỳ. Các mức dưới đây là học phí năm 2026 dành cho sinh viên, học viên mới nhập học c
+
+Q3: RMIT đã trao học bổng tổng giá trị bao nhiêu và cho hơn bao nhiêu bạn trẻ?
+Gold answer: RMIT đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ.
+Gold doc: hoc-bong-rmit-vietnam
+Metadata filter: {'audience': 'student'}
+Score: 2/2
+Top results:
+  1. score=0.4648 doc_id=hoc-bong-rmit-vietnam chunk=0 GOLD
+     # Thông tin học bổng RMIT Việt Nam Hàng năm, đại học RMIT Việt Nam trao nhiều học bổng cho các sinh viên tiềm năng. Đến nay, trường đã trao các học bổng với tổng giá trị hơn 613 tỉ đồng cho hơn 1.900 bạn trẻ ở khắp Việt 
+  2. score=0.3123 doc_id=hoc-bong-rmit-vietnam chunk=3 GOLD
+     ## Học bổng cho sinh viên quốc tế Nếu bạn là sinh viên quốc tế đạt thành tích học tập xuất sắc và đăng ký theo học tại trường Đại học RMIT Việt Nam, đây là những học bổng dành riêng cho bạn. Bạn là sinh viên hiện tại đan
+  3. score=0.2857 doc_id=hoc-bong-rmit-vietnam chunk=5 GOLD
+     ## Các bước nộp hồ sơ xin học bổng Trước khi nộp hồ sơ, các bạn nên đọc Điều khoản và Điều kiện học bổng. 1. Chọn học bổng phù hợp 2. Kiểm tra điều kiện nộp học bổng 3. Chuẩn bị hồ sơ 4. Nộp hồ sơ Mỗi học bổng đều có nhữ
+
+Q4: Nhân viên RMIT có những ngày nghỉ phép và nghỉ ốm có lương nào?
+Gold answer: Nhân viên có 20 ngày nghỉ phép có lương, 10 ngày nghỉ ốm có lương, 05 ngày nghỉ lễ Giáng Sinh có lương mỗi năm và một số ngày nghỉ bổ sung theo điều kiện.
+Gold doc: phuc-loi-nhan-vien-rmit
+Metadata filter: {'audience': 'staff'}
+Score: 2/2
+Top results:
+  1. score=0.6151 doc_id=phuc-loi-nhan-vien-rmit chunk=9 GOLD
+     ## Nghỉ phép Ngoài các ngày lễ trong năm theo quy định của Việt Nam, RMIT Việt Nam còn có các ngày nghỉ sau: 20 ngày nghỉ phép có lương trong một năm 10 ngày nghỉ ốm có lương trong một năm 05 ngày nghỉ lễ Giáng Sinh có l
+  2. score=0.3889 doc_id=phuc-loi-nhan-vien-rmit chunk=1 GOLD
+     ## Phúc lợi tài chính Mức lương cạnh tranh Hưởng 100% lương cho sáu tháng nghỉ thai sản Tiền thưởng và ngày nghỉ thêm cho nhân viên có thâm niên Lương tháng 13 cho nhân viên Việt Nam thỏa điều kiện theo yêu cầu Hỗ trợ họ
+  3. score=0.2830 doc_id=phuc-loi-nhan-vien-rmit chunk=11 GOLD
+     ## Di chuyển RMIT Việt Nam có xe buýt đưa đón miễn phí cho cán bộ giảng viên và sinh viên đi từ Quận 1 và khu vực Phú Mỹ Hưng.
+
+Q5: Sinh viên hiện tại hoặc cựu sinh viên RMIT gửi khiếu nại bằng cách nào?
+Gold answer: Sinh viên hiện tại hoặc cựu sinh viên RMIT có thể gửi khiếu nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT.
+Gold doc: quy-trinh-khieu-nai-rmit
+Metadata filter: None
+Score: 2/2
+Top results:
+  1. score=0.7686 doc_id=quy-trinh-khieu-nai-rmit chunk=2 GOLD
+     ## Sinh viên RMIT Nếu bạn là sinh viên hiện tại hoặc cựu sinh viên RMIT, bạn có thể gửi khiếu nại đến cổng thông tin khiếu nại trên trang dành cho sinh viên RMIT. Tôi hiện là sinh viên của RMIT
+  2. score=0.4878 doc_id=quy-trinh-khieu-nai-rmit chunk=3 GOLD
+     ## Sinh viên tương lai Bạn đang cân nhắc theo học tại RMIT? Nếu bạn đã từng liên lạc với chúng tôi, hoặc đã nhận được lời mời nhập học nhưng chưa ghi danh và muốn phản ánh về một vấn đề hay điều lo ngại hiện có, bạn có t
+  3. score=0.4842 doc_id=ho-tro-sinh-vien-rmit chunk=4 ----
+     ## Hội đồng sinh viên Hội đồng Sinh viên RMIT là đại diện ủng hộ cho toàn thể sinh viên Đại học RMIT Việt Nam.
+
+Strategy score: 10/10
+
+
+
+=== Strategy Summary ===
+
+fixed_size: 10/10
+
+by_sentences: 10/10
+
+recursive: 10/10
+
+heading_section: 10/10
+
+
+
+=== Metadata Filter A/B Check ===
+
+Strategy: recursive
+
+Q1 filter={'audience': 'student'}
+
+  with filter   : ['chinh-sach-hoc-phi-rmit', 'chinh-sach-hoc-phi-dac-biet', 'chinh-sach-hoc-phi-dac-biet']
+
+  without filter: ['chinh-sach-hoc-phi-rmit', 'chinh-sach-hoc-phi-dac-biet', 'chinh-sach-hoc-phi-dac-biet']
+
+Q2 filter={'audience': 'student'}
+
+  with filter   : ['chinh-sach-hoc-phi-dac-biet', 'chinh-sach-hoc-phi-dac-biet', 'chinh-sach-hoc-phi-rmit']
+
+  without filter: ['chinh-sach-hoc-phi-dac-biet', 'chinh-sach-hoc-phi-dac-biet', 'chinh-sach-hoc-phi-rmit']
+
+Q3 filter={'audience': 'student'}
+
+  with filter   : ['hoc-bong-rmit-vietnam', 'hoc-bong-rmit-vietnam', 'hoc-bong-rmit-vietnam']
+
+  without filter: ['hoc-bong-rmit-vietnam', 'hoc-bong-rmit-vietnam', 'hoc-bong-rmit-vietnam']
+
+Q4 filter={'audience': 'staff'}
+
+  with filter   : ['phuc-loi-nhan-vien-rmit', 'phuc-loi-nhan-vien-rmit', 'phuc-loi-nhan-vien-rmit']
+
+  without filter: ['phuc-loi-nhan-vien-rmit', 'phuc-loi-nhan-vien-rmit', 'phuc-loi-nhan-vien-rmit']
